@@ -1,8 +1,10 @@
 # School 📖
 
+[![wakatime](https://wakatime.com/badge/user/920a7e43-2969-4212-82ff-1b375685ff58/project/018d7b65-1683-457a-b27d-e82ce2b6d96d.svg)](https://wakatime.com/badge/user/920a7e43-2969-4212-82ff-1b375685ff58/project/018d7b65-1683-457a-b27d-e82ce2b6d96d)
+
 ### Requisitos do Trabalho
 
-Para este trabalho utilizem a linguagem de programação que preferir, desde que tenha suporte para o paradigma orientado a objetos. O objetivo deste trabalho é aplicar os conceitos dos quatro pilares da orientação a objetos dentro de um pequeno projeto de tema livre. 
+Para este trabalho utilizem a linguagem de programação que preferir, desde que tenha suporte para o paradigma orientado a objetos. O objetivo deste trabalho é aplicar os conceitos dos quatro pilares da orientação a objetos dentro de um pequeno projeto de tema livre.
 
 O código não precisa apresentar lógica de funcionamento geral, mas precisa apresentar uma estrutura de classes, atributos e métodos e alguns trechos de código simples pedidos abaixo. Os quatro pilares devem estar presentes com os seguintes requisitos:
 
