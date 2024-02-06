@@ -28,9 +28,11 @@ public class Teacher extends Person {
    * @return void
    */
   @Override
-  public void printInformation() {
-    System.out.println("Teacher\nName: " + this.getName() + " | Age: " + this.getAge() +
-        " | Year of Experience: " + this.yearsOfExperience);
+  public void print() {
+    System.out.println("Teacher\nName: " + this.getName()
+        + " | Age: " + this.getAge()
+        + " | Year of Experience: " + this.yearsOfExperience
+        + " | Teacher in High School: " + this.isPresentInHighSchool());
   }
 
   /**

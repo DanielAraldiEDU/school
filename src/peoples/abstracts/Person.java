@@ -33,7 +33,7 @@ public abstract class Person {
     }
   }
 
-  public void printInformation() {
+  public void print() {
     System.out.println("Name: " + name + "\nAge: " + age);
   }
 

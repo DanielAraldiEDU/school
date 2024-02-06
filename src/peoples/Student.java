@@ -28,9 +28,13 @@ public class Student extends Person {
    * @return void
    */
   @Override
-  public void printInformation() {
+  public void print() {
     System.out.println(
-        "Student\nName: " + this.getName() + " | Age: " + this.getAge() + " | Registration: " + this.registration);
+        "Student (" + this.registration + ")\n"
+            + "Name: " + this.getName()
+            + " | Age: " + this.getAge()
+            + " | Registration: " + this.registration
+            + " | Study in High School: " + this.isPresentInHighSchool());
   }
 
   /**
