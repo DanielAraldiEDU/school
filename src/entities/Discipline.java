@@ -18,6 +18,9 @@ public class Discipline extends Entity {
   }
 
   public Teacher getTeacher() {
+    if (this.teacher == null) {
+      System.out.println("Warning: The teacher still is null!");
+    }
     return this.teacher;
   }
 
@@ -30,6 +33,9 @@ public class Discipline extends Entity {
   }
 
   public List<Student> getStudents() {
+    if (this.students == null) {
+      System.out.println("Warning: The students still is null!");
+    }
     return this.students;
   }
 

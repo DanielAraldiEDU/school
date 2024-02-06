@@ -10,6 +10,9 @@ public abstract class Person {
   }
 
   public String getName() {
+    if (this.name == null) {
+      System.out.println("Warning: The name still is null!");
+    }
     return this.name;
   }
 
@@ -22,6 +25,9 @@ public abstract class Person {
   }
 
   public int getAge() {
+    if (this.age <= 6) {
+      System.out.println("Warning: The age is less or equal than 6 years old!");
+    }
     return this.age;
   }
 

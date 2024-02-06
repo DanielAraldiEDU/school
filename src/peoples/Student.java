@@ -11,6 +11,9 @@ public class Student extends Person {
   }
 
   public String getRegistration() {
+    if (this.registration == null) {
+      System.out.println("Warning: The registration still is null!");
+    }
     return this.registration;
   }
 

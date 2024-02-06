@@ -11,6 +11,9 @@ public class Teacher extends Person {
   }
 
   public int getYearsOfExperience() {
+    if (this.yearsOfExperience < 0) {
+      System.out.println("Warning: The years of experience value is less than zero!");
+    }
     return this.yearsOfExperience;
   }
 

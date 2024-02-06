@@ -8,6 +8,9 @@ public abstract class Entity {
   }
 
   public String getName() {
+    if (this.name == null) {
+      System.out.println("Warning: The name still is null!");
+    }
     return this.name;
   }
 

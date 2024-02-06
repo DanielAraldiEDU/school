@@ -14,6 +14,9 @@ public class School extends Entity {
   }
 
   public List<Discipline> getDisciplines() {
+    if (this.disciplines == null) {
+      System.out.println("Warning: The disciplines still is null!");
+    }
     return this.disciplines;
   }
 
