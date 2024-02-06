@@ -21,15 +21,16 @@ public class App {
     students.add(student02);
 
     /**
-     * Create teacher instance.
+     * Create teachers instances.
      */
-    Teacher teacher = new Teacher("Rodrigo Lyra", 38, 10);
+    Teacher teacher01 = new Teacher("Rodrigo Lyra", 38, 10);
+    Teacher teacher02 = new Teacher("Marcos Carrard", 45, 2);
 
     /**
      * Create disciplines instances and added them to the disciplines array.
      */
-    Discipline discipline01 = new Discipline("Paradigmas de Programação", teacher, students);
-    Discipline discipline02 = new Discipline("Algoritmos de Programação II", teacher, students);
+    Discipline discipline01 = new Discipline("Paradigmas de Programação", teacher01, students);
+    Discipline discipline02 = new Discipline("Algoritmos de Programação II", teacher02, students);
 
     disciplines.add(discipline01);
     disciplines.add(discipline02);
@@ -40,6 +41,6 @@ public class App {
     School school = new School("Escola Politécnica do Mar, Ciência e Tecnologia", disciplines);
 
     // Print all information about school instance
-    school.printSchool();
+    school.print();
   }
 }

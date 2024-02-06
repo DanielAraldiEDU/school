@@ -3,25 +3,14 @@ package entities;
 import java.util.ArrayList;
 import java.util.List;
 
-public class School {
-  private String name;
+import entities.abstracts.Entity;
+
+public class School extends Entity {
   private List<Discipline> disciplines = new ArrayList<Discipline>();
 
   public School(String name, List<Discipline> disciplines) {
-    this.name = name;
+    super(name);
     this.disciplines = disciplines;
-  }
-
-  public String getName() {
-    return this.name;
-  }
-
-  public void setName(String name) {
-    if (name != null && name.trim().length() > 0) {
-      this.name = name;
-    } else {
-      throw new Error("Name cannot be empty or blank!");
-    }
   }
 
   public List<Discipline> getDisciplines() {
@@ -45,14 +34,21 @@ public class School {
     }
   }
 
-  public void printSchool() {
+  /**
+   * Use print method of Entity abstract class to print School class
+   * information.
+   * 
+   * @return void
+   */
+  @Override
+  public void print() {
     System.out.println("\nSchool: " + this.getName());
     if (this.getDisciplines().isEmpty()) {
       System.out.println("This school has no disciplines.");
     } else {
       for (Discipline discipline : this.getDisciplines()) {
         System.out.println("\n");
-        discipline.printDiscipline();
+        discipline.print();
       }
     }
   }
